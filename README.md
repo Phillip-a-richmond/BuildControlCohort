@@ -31,3 +31,9 @@ grep "mRNA" igsr_Geuvadis.tsv | sort -k1V - > igsr_Geuvadis_Subset.tsv
 python JoinTSVs.py -1 ThousandGenomes.tsv -2 igsr_Geuvadis_mRNA.tsv -O Merged.tsv -B DownloadMerged.sh 
 ```
 
+4. Now we'll run the download script, or at least the first 30 lines
+```
+head -n 120 DownloadMerged.sh > DownloadMerged30samples.sh
+sh DownloadMerged30samples.sh
+```
+

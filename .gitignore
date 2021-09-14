@@ -1,0 +1,9 @@
+# Ignore fastqs
+*fastq*gz
+
+# cram
+*cram
+
+# bam
+*bam
+
